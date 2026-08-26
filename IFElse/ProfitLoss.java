@@ -8,7 +8,7 @@ public class ProfitLoss{
         System.out.println("Enter the value of Selling Price :");
         int sp = sc.nextInt();
         if (sp > cp) 
-    { System.out.println("Seller has incurred profit" + (sp-cp));}
+    { System.out.println("Seller has made profit" + (sp-cp));}
         else if (cp > sp) {
             System.out.println("Seller has incurred loss" + (cp-sp));
         }
