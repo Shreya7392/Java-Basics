@@ -13,7 +13,7 @@ public class PrintNegativeElementOfArray {
 
         int[] arr = new int[n];
 
-        System.out.println("Enter Array Elements: ");
+        System.out.print("Enter Array Elements: ");
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
