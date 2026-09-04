@@ -2,17 +2,25 @@ package Array;
 
 public class TwoSum {
     public static void main(String[] args){
-        System.out.println("Two sum");
+        int[] arr = {1, 2, 3, 4, 5};
+        int target = 7;
+        System.out.println(twoSum(arr, target));
     }
     
    public static boolean twoSum(int arr[], int target) {
         int n =arr.length;
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]+arr[j]==target);
+        int i=0;
+        int j=n-1;
+        while(i<j){
+            if(arr[i]+arr[j]==target){
                 return true;
-                
-            }       
+            }
+            else if(arr[i]+arr[j]<target){
+                i++;
+            }
+            else{
+                j--;
+            }
         }
          return  false;
     }
