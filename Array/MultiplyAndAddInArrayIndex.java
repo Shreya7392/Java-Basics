@@ -7,7 +7,7 @@ public class MultiplyAndAddInArrayIndex {
         System.out.print("Entet array size:");
         int n = sc.nextInt();
         int [] arr = new int[n];
-        System.out.print("Enter elements of an array:");
+        System.out.print("Enter elements of an array:"+ );
         for (int i =0; i< arr.length; i++){
             arr[i] = sc.nextInt();
         }
